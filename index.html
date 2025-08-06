@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samyak Londhe - AWS & DevOps Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Samyak Londhe</div>
+        <div class="hamburger">☰</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+<section id="about" class="hero">
+    <img src="images/profile.png" alt="Samyak Londhe" class="hero-image">
+    <h1>Hello, I'm Samyak Londhe</h1>
+    <p>AWS & DevOps Enthusiast | Pursuing AWS & DevOps Certification (May 2025) | Building Scalable Cloud Solutions</p>
+    <a href="#projects" class="cta-button">View My Projects</a>
+</section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <a href="https://aws.amazon.com" target="_blank" class="skill-card">
+                <img src="images/aws.svg" alt="AWS Logo" class="skill-logo">
+                <span>AWS</span>
+            </a>
+            <a href="https://www.terraform.io" target="_blank" class="skill-card">
+                <img src="images/terraform.svg" alt="Terraform Logo" class="skill-logo">
+                <span>Terraform</span>
+            </a>
+            <a href="https://www.ansible.com" target="_blank" class="skill-card">
+                <img src="images/ansible.svg" alt="Ansible Logo" class="skill-logo">
+                <span>Ansible</span>
+            </a>
+            <a href="https://www.docker.com" target="_blank" class="skill-card">
+                <img src="images/docker.svg" alt="Docker Logo" class="skill-logo">
+                <span>Docker</span>
+            </a>
+            <a href="https://www.jenkins.io" target="_blank" class="skill-card">
+                <img src="images/jenkins.svg" alt="Jenkins Logo" class="skill-logo">
+                <span>Jenkins</span>
+            </a>
+            <a href="https://www.python.org" target="_blank" class="skill-card">
+                <img src="images/python.svg" alt="Python Logo" class="skill-logo">
+                <span>Python</span>
+            </a>
+            <a href="https://www.gnu.org/software/bash/" target="_blank" class="skill-card">
+                <img src="images/bash.svg" alt="Bash Logo" class="skill-logo">
+                <span>Bash</span>
+            </a>
+            <a href="https://www.linux.org" target="_blank" class="skill-card">
+                <img src="images/linux.svg" alt="Linux Logo" class="skill-logo">
+                <span>Linux</span>
+            </a>
+            <a href="https://www.nginx.com" target="_blank" class="skill-card">
+                <img src="images/nginx.svg" alt="NGINX Logo" class="skill-logo">
+                <span>NGINX</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="aws">AWS</button>
+            <button class="filter-btn" data-filter="devops">DevOps</button>
+            <button class="filter-btn" data-filter="automation">Automation</button>
+            <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+        </div>
+        <div class="project-grid">
+            
+            <div class="project-card" data-category="aws devops automation">
+                <h3>EBS Volume Optimization</h3>
+                <p>Serverless pipeline using Lambda, DynamoDB, SNS, and CloudWatch to convert EBS gp2 to gp3 for cost savings.</p>
+                <a href="https://github.com/samyaklondhe/AutomatedBackup.git" target="_blank" class="project-button">View on GitHub</a>
+            </div>
+            <div class="project-card" data-category="devops automation">
+                <h3>GitHub Backup to Google Drive</h3>
+                <p>Automated backup script with cron scheduling and rclone to store GitHub project backups on Google Drive.</p>
+                <a href="https://github.com/samyaklondhe/AutomatedBackup.git" target="_blank" class="project-button">View on GitHub</a>
+            </div>
+            <div class="project-card" data-category="aws devops automation">
+                <h3>Jenkins Log Automation</h3>
+                <p>Automated Jenkins job to upload access logs >1GB to S3 and clear disk space, triggered by a monitoring script.</p>
+                <a href="https://github.com/samyaklondhe/JenkinsLogAutoBackup.git" target="_blank" class="project-button">View on GitHub</a>
+            </div>
+            <div class="project-card" data-category="aws devops automation">
+                <h3>S3 to RDS Data Pipeline</h3>
+                <p>Dockerized Python script to ingest S3 data into RDS MySQL with AWS Glue fallback, ensuring reliability.</p>
+                <a href="https://github.com/samyaklondhe/S3ToRDSORGlue.git" target="_blank" class="project-button">View on GitHub</a>
+            </div>
+            <div class="project-card" data-category="aws devops infrastructure">
+                <h3>3-Tier AWS Infrastructure</h3>
+                <p>Deployed a secure 3-tier architecture (VPC, EC2, RDS) using Terraform and Ansible for scalability.</p>
+                <a href="https://github.com/samyaklondhe/terraform-3-tier.git" target="_blank" class="project-button">View on GitHub</a>
+            </div>
+            <div class="project-card" data-category="aws automation">
+                <h3>Cross-Region EC2 Backup</h3>
+                <p>Automated EC2 backup replication from us-east-1 to ap-south-1 using AWS Backup for disaster recovery.</p>
+                <a href="https://github.com/samyaklondhe/AutomatedBackup.git" target="_blank" class="project-button">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Reach out to discuss AWS, DevOps, or collaboration opportunities!</p>
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:samyaklondhe0358@gmail.com" class="contact-link">samyaklondhe0358@gmail.com</a></p>
+            <p><strong>Mobile:</strong> <a href="tel:+917888121751" class="contact-link">+917888121751</a></p>
+            <div class="contact-buttons">
+                <a href="https://github.com/samyaklondhe" target="_blank" class="contact-button">
+                    <img src="images/github.svg" alt="GitHub Logo" class="contact-logo">
+                </a>
+                <a href="https://www.linkedin.com/in/samyak-londhe-749262287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-button">
+                    <img src="images/linkedin.svg" alt="LinkedIn Logo" class="contact-logo">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Samyak Londhe. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
